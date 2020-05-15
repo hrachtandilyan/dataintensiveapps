@@ -1,0 +1,38 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{EnglishSlides}[English slides style]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{navigation symbols}{}
+\RequirePackage{beamerthemeshadow}
+\usefonttheme{serif}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage{graphicx}
+\graphicspath{ {res/} }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage{fontspec}
+\RequirePackage{lmodern}
+\setmainfont{DejaVu Sans}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage{minted}
+\setminted[cpp]{fontsize=\footnotesize}
+\setmonofont{Consolas}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage{xltxtra}
+\RequirePackage{hyperref}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usetheme{Luebeck}
+\usecolortheme{crane}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{HTDark}{RGB}{140, 0, 0} % primary color
+\definecolor{HTLight}{RGB}{160, 0, 0}   % secondary color
+\setbeamercolor{palette primary}{bg=HTDark,fg=white}
+\setbeamercolor{palette secondary}{bg=HTDark,fg=white}
+\setbeamercolor{palette tertiary}{bg=HTDark,fg=white}
+\setbeamercolor{palette quaternary}{bg=HTDark,fg=white}
+\setbeamercolor{structure}{fg=HTDark} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=HTDark} % TOC sections
+\setbeamercolor{block title}{fg=white,bg=HTDark}
+\setbeamercolor{block body}{fg=white, bg=HTLight}
+\setbeamercolor{subsection in head/foot}{bg=HTLight,fg=white}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\endinput
